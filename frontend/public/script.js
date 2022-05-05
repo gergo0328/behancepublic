@@ -1,0 +1,1 @@
+$("#mask").draggable({ containment: "parent" });

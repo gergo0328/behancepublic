@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  src: url(/public/neuemontreal/NeueMontreal-Regular.otf) format("opentype");
+}
+
+body {
+  background-color: #e1dfdd;
+  padding: 0 70px;
+  line-height: 0.8;
+  font-family: NeueMontreal-Regular;
+}
+
+body header {
+  width: 100%;
+  height: 60px;
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header div.name {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body header div.wise {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body header div.base {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body header button.work {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body header button.about {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body header button.contact {
+  font-family: NeueMontreal-Regular;
+  font-size: large;
+  color: black;
+}
+
+body #wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body .cursor {
+  position: absolute;
+  background: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  z-index: 1;
+  -webkit-transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+body .cursor ::before {
+  /*content: "Drag me";*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  /* background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+                background-position: center;
+                background-repeat: no-repeat;*/
+  background-size: cover;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+body .cursor .active {
+  opacity: 1;
+  -webkit-transform: scale(12);
+  transform: scale(12);
+}
+
+body .cursor .active ::before {
+  opacity: 1;
+}
+
+body #hero-title {
+  font-size: 144px;
+  text-align: left;
+  line-height: 0.9;
+  padding-bottom: 45px;
+}
+
+body .hero-pic {
+  width: 1500px;
+}
+
+body #mask {
+  width: 720px;
+  height: 274px;
+  position: absolute;
+  overflow: hidden;
+}
+
+body #mask #unblurred {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.richardekwonye.com/images/hero-cover.jpg);
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  cursor: move;
+}
+
+body #blurred {
+  width: 100%;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+}
+
+body .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 200px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 40px;
+}
+
+body .section-container .arrow-container {
+  width: 150px;
+  height: 50%;
+}
+
+body .section-container p.mid-p {
+  width: 445px;
+  margin-left: 120px;
+  font-size: 20px;
+  color: black;
+}
+
+body .section-container h1.hero-title {
+  margin: 0;
+  font-size: 144px;
+  text-align: right;
+  line-height: 0.8em;
+}
+
+body .first-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /*border: 3px solid black;*/
+  padding: 100px;
+}
+
+body .first-section-container .first-point-container {
+  width: 30%;
+  height: 100%;
+  /*border: 3px solid red;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+}
+
+body .first-section-container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 100%;
+  /*border: 3px solid yellow;*/
+  font-size: 35px;
+}
+
+body .first-section-container .text-container .first-two-paragraph {
+  width: 100%;
+  height: 50%;
+  /*border: 3px solid green;*/
+}
+
+body .first-section-container .text-container .first-two-paragraph p {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+body .first-section-container .text-container .second-text-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  /*border: 3px solid blue;*/
+}
+
+body .first-section-container .text-container .second-text-part .second-a-column {
+  width: 30%;
+  height: 100%;
+  border: 3px solid black;
+}
+
+body .first-section-container .text-container .second-text-part .second-a-column p.second-text {
+  width: 65%;
+  font-size: 25px;
+}
+
+body .first-section-container .text-container .second-text-part .second-b-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  width: 70%;
+  height: 100%;
+  border: 3px solid black;
+}
+
+body .first-section-container .text-container .second-text-part .second-b-column p.second-text {
+  width: 65%;
+  font-size: 25px;
+  line-height: 0.9em;
+}
+
+body .first-section-container .text-container .second-text-part .second-b-column a {
+  margin-top: 40px;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
